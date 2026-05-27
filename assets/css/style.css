@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:  radial-gradient(circle at center, #fbfbfb, #18120c);
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "menu"
+        "main"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 60px 1fr 80px;
+        min-height: 100vh;
+}
+
+.mdi-menu{
+ display: flex;
+    font-size: 50px;
+    border: #f8f2f2 1px solid;
+    border-radius: 10px;
+    color: #fff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.mdi-menu:hover{
+    color: #ef0808;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma,  sans-serif 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma,  sans-serif , Calibri, 'Trebuchet MS',; 
+    font-weight: italic;
+    color: #fff;
+    margin-top: 40px;
+}
+
+menu{
+    grid-area: menu;
+}
+
+
+
+
+.menu-item{
+    border: #fff 1px solid;
+    border-radius: 80px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.menu-item:hover{
+    color: #ef0808;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main{
+    grid-area: main;
+}
+
+   
+footer{
+    grid-area: footer;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.bike-img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border: #110d0d 1px solid;
+    border-style: dotted;
+    border-radius: 40px;
+}    
+
+@media (min-width:576px){
+       body{
+        grid-template-areas: 
+        "nav nav"
+        "menu main"
+        "menu footer";
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 70px 1fr 70px;
+        
+        .menu-item{
+            display: flex;
+        }
+
+        .mdi-menu{
+            display: none;
+        }
+        
+}
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 45px;
+    color: #fff;
+    margin-top: 0px;
+    font-size:35px;
+}
+.iconos span:hover{
+    color: #ef0808;
+    cursor: pointer;
+    transition: 0.3s;
+}
