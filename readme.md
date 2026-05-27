@@ -17,3 +17,5 @@ https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css
 Footer sobre imágenes: Si los iconos del footer se superponen a la última imagen, ajustar grid-template-rows (aumentar la fila del footer), quitar height: 100% en .img-container o añadir padding-bottom en main.
 
 link deploy:
+
+https://salazarastub.github.io/bikeaholic/
